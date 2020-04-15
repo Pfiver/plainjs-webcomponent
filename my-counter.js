@@ -1,5 +1,4 @@
 class MyCounter extends HTMLElement {
-  
   count = 0;
 
   static html = `
@@ -28,9 +27,8 @@ class MyCounter extends HTMLElement {
       color: white;
     }
   `;
-  
-  constructor() {
 
+  constructor() {
     super();
 
     this.attachShadow({ mode: "open" });
@@ -47,7 +45,7 @@ class MyCounter extends HTMLElement {
 
     this.inc = this.inc.bind(this);
     this.dec = this.dec.bind(this);
-    
+
     this.update();
   }
 
